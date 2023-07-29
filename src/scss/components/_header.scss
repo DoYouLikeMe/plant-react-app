@@ -1,0 +1,13 @@
+.header {
+  background-color: $bg-section;
+}
+
+.header-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
