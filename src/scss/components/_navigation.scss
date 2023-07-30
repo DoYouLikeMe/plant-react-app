@@ -8,11 +8,20 @@
     flex-wrap: wrap;
     padding: 0;
   }
+  &__item {
+    font-size: 16px;
+    line-height: auto;
+    font-family: $font-secondary;
+    color: $text-link-color;
+    line-height: auto;
+  }
+
   &__link {
     text-decoration: none;
-    color: $text-link-color;
+    color: inherit;
+    line-height: inherit;
     cursor: pointer;
-    &_active {
+    &.active {
       color: $text-active;
     }
   }

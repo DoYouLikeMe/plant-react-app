@@ -2,4 +2,8 @@
   display: flex;
   gap: 1px;
   align-items: flex-end;
+  font-size: 16px;
+  line-height: auto;
+  font-family: $font-secondary;
+  color: $text-black-color;
 }

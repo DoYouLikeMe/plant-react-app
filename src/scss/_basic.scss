@@ -11,5 +11,10 @@ body {
 }
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  line-height: $font-height-base;
+  font-style: normal;
+  color: $text-primary-color;
 }
