@@ -18,3 +18,16 @@ body {
   font-style: normal;
   color: $text-primary-color;
 }
+
+.section-heading {
+  color: $text-black-color;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: $font-primary;
+  margin: 0;
+  line-height: 50px;
+}
+
+.green-emphasizing {
+  color: $text-green-color;
+}
