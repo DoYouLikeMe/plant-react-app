@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  align-items: center;
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 46px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-link-color;
+    cursor: pointer;
+    &_active {
+      color: $text-active;
+    }
+  }
+}

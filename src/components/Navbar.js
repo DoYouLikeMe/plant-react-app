@@ -5,11 +5,29 @@ export const Navbar = () => {
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="/">Home</Link>
-          <Link to="/about">About us</Link>
-          <Link to="/service">Service</Link>
-          <Link to="/price">Price</Link>
-          <Link to="/contacts">Contacts</Link>
+          <Link className="nav__link nav__link_active" to="/">
+            Home
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link className="nav__link" to="/about">
+            About us
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link className="nav__link" to="/service">
+            Service
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link className="nav__link" to="/price">
+            Price
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link className="nav__link" to="/contacts">
+            Contacts
+          </Link>
         </li>
       </ul>
     </nav>
