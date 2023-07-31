@@ -7,22 +7,22 @@ export const Socials = () => {
   return (
     <ul className="social-list">
       <li className="social-list__item">
-        <a class="social-list__link" href="instagram.com">
+        <a className="social-list__link" href="https://www.instagram.com/">
           <InstIcon className="social-list__icon" />
         </a>
       </li>
       <li className="social-list__item">
-        <a class="social-list__link" href="instagram.com">
+        <a className="social-list__link" href="https://www.facebook.com/">
           <FbIcon className="social-list__icon" />
         </a>
       </li>
       <li className="social-list__item">
-        <a class="social-list__link" href="instagram.com">
+        <a className="social-list__link" href="https://twitter.com/">
           <TwIcon className="social-list__icon" />
         </a>
       </li>
       <li className="social-list__item">
-        <a class="social-list__link" href="instagram.com">
+        <a className="social-list__link" href="https://www.pinterest.com/">
           <PinterestIcon className="social-list__icon" />
         </a>
       </li>

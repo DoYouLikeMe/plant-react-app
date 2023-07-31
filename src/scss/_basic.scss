@@ -28,10 +28,18 @@ body {
   font-family: $font-primary;
   margin: 0;
   line-height: 50px;
+  &_secondary {
+    font-family: $font-secondary;
+    color: $text-green-color;
+  }
 }
 
 .green-emphasizing {
   color: $text-green-color;
+}
+
+.red-emphasizing {
+  color: $text-active;
 }
 
 .grey-bg {

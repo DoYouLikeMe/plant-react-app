@@ -1,5 +1,6 @@
 import Leafs from "@/assets/images/leafs.png";
 import {Button} from "@/components/ui/Button";
+import {Link} from "react-router-dom";
 
 export const Main = () => {
   return (
@@ -9,15 +10,18 @@ export const Main = () => {
           <img className="main__image" src={Leafs} alt="Leafs" />
           <div className="main__content">
             <h1 className="section-heading main__heading">
-              We grow <span class="green-emphasizing">plants</span> and give you
-              oxygen
+              We grow <span className="green-emphasizing">plants</span> and give
+              you oxygen
             </h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
-            <Button text="Learn More" />
+            <Link to="/about">
+              {" "}
+              <Button text="Learn More" />
+            </Link>
           </div>
         </div>
       </div>
