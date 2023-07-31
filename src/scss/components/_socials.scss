@@ -1,0 +1,17 @@
+.social-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $text-black-color;
+    &:hover {
+      color: #636060;
+    }
+  }
+}
