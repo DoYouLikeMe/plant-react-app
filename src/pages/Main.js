@@ -1,8 +1,9 @@
 import Leafs from "@/assets/images/leafs.png";
+import {Button} from "@/components/ui/Button";
 
 export const Main = () => {
   return (
-    <section className="main">
+    <section className="main fullHeight grey-bg">
       <div className="container">
         <div className="main__wrapper">
           <img className="main__image" src={Leafs} alt="Leafs" />
@@ -16,6 +17,7 @@ export const Main = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s.
             </p>
+            <Button text="Learn More" />
           </div>
         </div>
       </div>

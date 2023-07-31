@@ -1,0 +1,19 @@
+.btn {
+  background-color: transparent;
+  border: 1px solid $text-secondary-color;
+  font-family: $font-secondary;
+  border-radius: 5px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  transition: 0.15s ease-in;
+
+  &:hover {
+    background-color: $text-active;
+    border-color: $text-active;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+  }
+}

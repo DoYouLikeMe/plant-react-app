@@ -17,6 +17,8 @@ body {
   line-height: $font-height-base;
   font-style: normal;
   color: $text-primary-color;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-heading {
@@ -30,4 +32,8 @@ body {
 
 .green-emphasizing {
   color: $text-green-color;
+}
+
+.grey-bg {
+  background-color: $bg-section;
 }

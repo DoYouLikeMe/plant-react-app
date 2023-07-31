@@ -5,6 +5,7 @@ import {Price} from "@/pages/Price";
 import {About} from "@/pages/About";
 import {Contacts} from "@/pages/Contacts";
 import {Service} from "@/pages/Service";
+import {Footer} from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/service" element={<Service />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
