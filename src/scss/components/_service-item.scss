@@ -1,0 +1,35 @@
+.service-item {
+  background-color: $bg-section;
+  border-radius: 20px;
+  box-sizing: border-box;
+  &_inactive {
+    filter: blur(2px);
+  }
+  &__image {
+    height: 350px;
+    background-color: $text-main-heading;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__content {
+    padding-bottom: 36px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    line-height: 20px;
+  }
+  &__heading {
+    color: $text-secondary-color;
+    font-family: $font-secondary;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: 16px;
+  }
+}

@@ -9,7 +9,8 @@
   outline: none;
   transition: 0.15s ease-in;
 
-  &:hover {
+  &:hover,
+  &__active {
     background-color: $text-active;
     border-color: $text-active;
     color: #fff;

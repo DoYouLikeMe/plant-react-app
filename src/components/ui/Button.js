@@ -1,4 +1,8 @@
 export const Button = (props) => {
-  const {text} = props;
-  return <button className="btn">{text}</button>;
+  const {text, onClick, isActive} = props;
+  return (
+    <button onClick={onClick} className={isActive ? "btn btn__active" : "btn"}>
+      {text}
+    </button>
+  );
 };

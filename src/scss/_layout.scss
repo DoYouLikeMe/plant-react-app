@@ -5,6 +5,10 @@
   width: 100%;
   padding-left: 109px;
   padding-right: 109px;
+  @media (max-width: 800px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .fullHeight {
@@ -12,4 +16,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.serviceWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  column-gap: 100px;
+  row-gap: 50px;
+  @media (max-width: 1400px) {
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.buttons-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
 }
