@@ -1,7 +1,5 @@
-import image from "@/temp/image.jpg";
-
 export const ServiceItem = (props) => {
-  const {title, description, category, allInactive, isActive} = props;
+  const {title, description, category, imageURL, allInactive, isActive} = props;
   return (
     <div
       dataset={category}
@@ -13,7 +11,7 @@ export const ServiceItem = (props) => {
     >
       <div
         className="service-item__image"
-        style={{backgroundImage: `url(${image})`}}
+        style={{backgroundImage: `url(${imageURL})`}}
       ></div>
       <div className="service-item__content">
         <div className="service-item__heading">{title}</div>

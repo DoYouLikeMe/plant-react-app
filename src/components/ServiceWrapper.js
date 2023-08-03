@@ -52,6 +52,7 @@ export const ServiceWrapper = () => {
             title={item.title}
             description={item.description}
             category={item.category}
+            imageURL={item.imageURL}
           />
         ))}
       </div>
