@@ -17,11 +17,13 @@
 @import "components/footer";
 @import "components/socials";
 @import "components/service-item";
-
+@import "components/priceDetails";
 // Pages
 @import "pages/main";
 @import "pages/about";
+@import "pages/price";
 
 // Ui
 
 @import "ui/button";
+@import "ui/tabDetail";

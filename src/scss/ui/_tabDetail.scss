@@ -1,0 +1,113 @@
+.tabDetail {
+  position: relative;
+  transition: 0.5s ease;
+
+  &[open] {
+    background-color: transparent;
+  }
+  &__heading {
+    background-color: $bg-section;
+    font-size: 20px;
+    line-height: 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 16px 40px;
+    list-style: none;
+    color: $text-black-color;
+    cursor: pointer;
+    position: relative;
+    &__hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &[open] &__heading {
+    z-index: 10;
+    &:after {
+      display: block;
+      width: 164px;
+      height: 0.5px;
+      background-color: #aea1a1;
+      content: "";
+      left: 50%;
+      margin-left: -82px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  &__arrow {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -8px;
+    background-color: #d9d9d9;
+    right: 40px;
+    &:after {
+      width: 4px;
+      height: 4px;
+      border: 1px solid $text-main-heading;
+      border-left: 0;
+      border-top: 0;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      left: 50%;
+      margin-left: -2px;
+      content: "";
+      display: block;
+    }
+  }
+  &[open] &__arrow {
+    &:after {
+      transform: rotate(225deg);
+      margin-top: -1px;
+      margin-left: -2px;
+    }
+  }
+  &__content {
+    padding: 40px 40px 16px 40px;
+    display: flex;
+    top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    background-color: $bg-section;
+    border-radius: 20px;
+  }
+  &__description {
+    font-size: 10px;
+    font-weight: 300;
+    color: $text-main-heading;
+    line-height: 10px;
+    margin: 0;
+  }
+  &__sum {
+    font-size: 12px;
+    line-height: 20px;
+    color: $text-black-color;
+    margin: 0;
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      color: $text-active;
+    }
+  }
+  &__btn {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #fff;
+    color: $text-main-heading;
+    font-weight: 700;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2.5px 5px;
+    min-width: 86px;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+}

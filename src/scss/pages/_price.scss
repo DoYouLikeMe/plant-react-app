@@ -1,0 +1,19 @@
+.price {
+  padding-top: 40px;
+  padding-bottom: 115px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.price-content-left {
+  max-width: 332px;
+  width: 100%;
+}
+
+.price-content-right {
+  max-width: 452px;
+}
