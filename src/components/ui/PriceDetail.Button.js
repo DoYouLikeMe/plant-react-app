@@ -1,6 +1,8 @@
 import {useState, useRef, useEffect} from "react";
+import {Link} from "react-router-dom";
 
-export const PriceDetailsButton = () => {
+export const PriceDetailsButton = (props) => {
+  const {plan, description, price, time} = props;
   const [isOpen, setIsOpen] = useState(false);
   const elementRef = useRef(null);
 
@@ -30,19 +32,17 @@ export const PriceDetailsButton = () => {
       {...(isOpen ? {open: true} : {})}
     >
       <summary className="tabDetail__heading" onClick={(e) => handleClick(e)}>
-        Basics<span className="tabDetail__arrow"></span>
+        {plan}
+        <span className="tabDetail__arrow"></span>
       </summary>
       <div className="tabDetail__content">
-        <p className="tabDetail__description">
-          Release of Letraset sheets containing Lorem Ipsum passages, and more
-          recently
-        </p>
+        <p className="tabDetail__description">{description}</p>
         <p className="tabDetail__sum">
-          <span>$15</span> / per hour
+          <span>${price}</span> / per {time}
         </p>
-        <a href="#contacts" className="tabDetail__btn">
+        <Link to="/contacts" className="tabDetail__btn">
           Order
-        </a>
+        </Link>
       </div>
     </details>
   );

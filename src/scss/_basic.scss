@@ -32,6 +32,9 @@ body {
     font-family: $font-secondary;
     color: $text-green-color;
   }
+  &_right {
+    text-align: right;
+  }
 }
 
 .green-emphasizing {

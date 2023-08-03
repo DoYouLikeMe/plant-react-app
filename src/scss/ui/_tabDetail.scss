@@ -14,6 +14,7 @@
     padding: 16px 40px;
     list-style: none;
     color: $text-black-color;
+    transition: 1s ease;
     cursor: pointer;
     position: relative;
     &__hover {
@@ -22,6 +23,7 @@
   }
   &[open] &__heading {
     z-index: 10;
+    background-color: $bg-active;
     &:after {
       display: block;
       width: 164px;
@@ -75,8 +77,9 @@
     align-items: flex-start;
     gap: 10px;
     position: absolute;
-    background-color: $bg-section;
+    background-color: $bg-active;
     border-radius: 20px;
+    z-index: 5;
   }
   &__description {
     font-size: 10px;
