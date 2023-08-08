@@ -18,12 +18,15 @@
 @import "components/socials";
 @import "components/service-item";
 @import "components/priceDetails";
+
 // Pages
 @import "pages/main";
 @import "pages/about";
 @import "pages/price";
-
+@import "pages/contacts";
 // Ui
 
 @import "ui/button";
 @import "ui/tabDetail";
+@import "ui/contactDetails";
+@import "ui/address";

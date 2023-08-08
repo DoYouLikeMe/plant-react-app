@@ -1,0 +1,39 @@
+.address {
+  border-radius: 20px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  line-height: 40px;
+  color: #717171;
+  padding: 17px 76px 32px 33px;
+  display: block;
+  visibility: hidden;
+  &__row {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    row-gap: 10px;
+    @media screen and (max-width: 560px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+  &__heading {
+    color: #000000;
+  }
+  &__btn {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "Inika", sans-serif;
+    color: #717171;
+    border-color: #e06733;
+    border-radius: 5px;
+    text-transform: none;
+    margin: 0 auto;
+    padding: 10px 17px;
+    display: block;
+    max-width: fit-content;
+    margin: 15px auto 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+}

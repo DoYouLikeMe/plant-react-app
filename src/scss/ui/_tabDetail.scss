@@ -36,33 +36,7 @@
       bottom: 0;
     }
   }
-  &__arrow {
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    top: 50%;
-    margin-top: -8px;
-    background-color: #d9d9d9;
-    right: 40px;
-    &:after {
-      width: 4px;
-      height: 4px;
-      border: 1px solid $text-main-heading;
-      border-left: 0;
-      border-top: 0;
-      transform: rotate(45deg);
-      position: absolute;
-      top: 50%;
-      margin-top: -3px;
-      left: 50%;
-      margin-left: -2px;
-      content: "";
-      display: block;
-    }
-  }
-  &[open] &__arrow {
+  &[open] .arrow {
     &:after {
       transform: rotate(225deg);
       margin-top: -1px;

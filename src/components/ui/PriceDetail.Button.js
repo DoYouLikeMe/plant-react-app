@@ -33,7 +33,7 @@ export const PriceDetailsButton = (props) => {
     >
       <summary className="tabDetail__heading" onClick={(e) => handleClick(e)}>
         {plan}
-        <span className="tabDetail__arrow"></span>
+        <span className="arrow"></span>
       </summary>
       <div className="tabDetail__content">
         <p className="tabDetail__description">{description}</p>
