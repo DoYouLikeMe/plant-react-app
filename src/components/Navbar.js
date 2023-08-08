@@ -1,9 +1,19 @@
 import {NavLink} from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+  const {isMobile, isActive, closeMenu} = props;
   return (
-    <nav className="nav">
-      <ul className="nav__list">
+    <nav
+      onClick={closeMenu}
+      className={
+        isMobile
+          ? isActive
+            ? "nav nav_mobile nav_active"
+            : "nav nav_mobile"
+          : "nav"
+      }
+    >
+      <ul className={isMobile ? "nav__list nav__list_mobile" : "nav__list"}>
         <li className="nav__item">
           <NavLink className="nav__link" to="/">
             Home

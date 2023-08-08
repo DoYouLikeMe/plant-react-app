@@ -17,4 +17,9 @@
     outline: none;
     box-shadow: none;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
