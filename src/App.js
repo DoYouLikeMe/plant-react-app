@@ -5,7 +5,8 @@ import {Price} from "@/pages/Price";
 import {About} from "@/pages/About";
 import {Contacts} from "@/pages/Contacts";
 import {Service} from "@/pages/Service";
-import {Footer} from "./components/Footer";
+import {NotFound} from "@/pages/NotFound";
+import {Footer} from "@/components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/service" element={<Service />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <Footer />
