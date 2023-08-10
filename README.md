@@ -1,2 +1,16 @@
 # plant-react-app
-A simple website made with use of React 
+
+The Adative and responsible website for a plant service company build with use of React Library.
+
+## Techologies Featured:
+
+- React
+- React Router
+- Rect Hooks
+- SCSS
+- Grid / Flexbox Layouts
+
+## Commands
+
+- npm run build
+- npm start
