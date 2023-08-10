@@ -1,22 +1,21 @@
 export const data = [
   {
     plan: "Basics",
-    description:
-      "Release of Letraset sheets containing Lorem Ipsum passages, and more recently",
+    description: "Weekly or bi-weekly mowing of your lawn",
     price: 15,
     time: "hour",
   },
   {
     plan: "Standard",
     description:
-      "Release of Letraset sheets containing Lorem Ipsum passages, and more recently",
+      "All services included in the Basic Plan + Aeration, over-seeding, and fertilization of fescue areas ",
     price: 25,
     time: "hour",
   },
   {
     plan: "Pro care",
     description:
-      "Release of Letraset sheets containing Lorem Ipsum passages, and more recently",
+      "All services included in the Basic and Standard Plans + Professionally drawn designs and installation",
     price: 35,
     time: "hour",
   },

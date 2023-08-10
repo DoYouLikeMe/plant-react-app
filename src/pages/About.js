@@ -15,12 +15,11 @@ export const About = () => {
               gardeners
             </h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              Our team of gardeners has over 4 years of professional experience
+              in the industry 1 . We have a comprehensive understanding of the
+              duties and responsibilities that come with the job, such as
+              planting, weeding, pruning, and maintaining flower beds, gardens,
+              and other landscaping areas.
             </p>
             <Link to="/Service">
               <Button text="Our Service" />

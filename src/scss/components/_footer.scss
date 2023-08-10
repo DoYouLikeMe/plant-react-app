@@ -1,11 +1,19 @@
 .footer {
   padding-top: 49px;
   padding-bottom: 49px;
+  @media (max-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 5px;
+    }
   }
   &__link {
     display: flex;

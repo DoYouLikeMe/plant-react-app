@@ -14,9 +14,9 @@ export const Main = () => {
               you oxygen
             </h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              We are passionate about growing plants and providing you with the
+              gift of oxygen. Our mission is to create a greener and healthier
+              environment for everyone.
             </p>
             <Link to="/about">
               {" "}

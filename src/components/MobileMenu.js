@@ -9,7 +9,14 @@ export const MobileMenu = () => {
   };
   return (
     <>
-      <button onClick={showMenu} className="mobile-menu-btn">
+      <button
+        onClick={showMenu}
+        className={
+          isActive
+            ? "mobile-menu-btn mobile-menu-btn_active"
+            : "mobile-menu-btn"
+        }
+      >
         Открыть мобильное меню
       </button>
       <Navbar isMobile={true} isActive={isActive} closeMenu={showMenu} />

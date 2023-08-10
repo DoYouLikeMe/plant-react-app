@@ -8,6 +8,7 @@
   border-bottom: 2px solid $text-main-heading;
   cursor: pointer;
   position: relative;
+  box-sizing: border-box;
   z-index: 999;
   display: none;
   @media screen and (max-width: 768px) {
@@ -22,11 +23,28 @@
     background-color: $text-main-heading;
     content: "";
     left: 0;
+    transition: 0.5s ease-in;
   }
   &:after {
     bottom: 13px;
   }
   &::before {
     top: 13px;
+  }
+
+  &_active {
+    border-bottom: none;
+    border-top: none;
+    outline: none;
+    &:after {
+      transform: rotate(45deg);
+      top: 50%;
+      bottom: 50%;
+    }
+    &:before {
+      transform: rotate(-45deg);
+      top: 50%;
+      bottom: 50%;
+    }
   }
 }

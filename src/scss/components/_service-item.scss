@@ -21,12 +21,13 @@
     padding-top: 15px;
     box-sizing: border-box;
     line-height: 20px;
+    text-align: center;
   }
   &__heading {
     color: $text-secondary-color;
     font-family: $font-secondary;
     font-weight: 700;
-    text-align: center;
+
     margin-bottom: 10px;
   }
   &__description {

@@ -12,12 +12,15 @@
   width: 100%;
   padding-left: 109px;
   padding-right: 109px;
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     padding-left: 15px;
     padding-right: 15px;
   }
   &_bottom {
     justify-content: space-between;
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+    }
   }
 }
 

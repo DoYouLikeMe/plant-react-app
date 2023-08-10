@@ -19,6 +19,10 @@ body {
   color: $text-primary-color;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1200px) {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
 }
 
 .section-heading {
@@ -29,15 +33,29 @@ body {
   margin: 0;
   line-height: 50px;
   margin-bottom: 20px;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
   &_secondary {
     font-family: $font-secondary;
     color: $text-green-color;
+    @media screen and (max-width: 1200px) {
+      font-size: 1.5em;
+      line-height: 1.2em;
+    }
   }
   &_right {
     text-align: right;
+    @media screen and (max-width: 1200px) {
+      text-align: left;
+    }
   }
   &_center {
     text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    line-height: 1.2em;
   }
 }
 
@@ -61,7 +79,7 @@ body {
   border-radius: 50%;
   top: 50%;
   margin-top: -8px;
-  background-color: #d9d9d9;
+  background-color: $bg-tabs-border;
   right: 40px;
   &:after {
     width: 4px;
