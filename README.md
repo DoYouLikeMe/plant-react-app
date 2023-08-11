@@ -2,7 +2,7 @@
 
 The Adative and responsible website for a plant service company build with use of React Library.
 
-## Techologies Featured:
+## Technologies Featured:
 
 - React
 - React Router
